@@ -8,9 +8,23 @@ class MessageInput extends React.Component {
         super(props);
     }
     render(){
+        const styles = {
+            paper:{
+                width:'100%',
+                height:'12%',
+                padding:'20px 20px 0px',
+                position: 'fixed',
+                bottom:'0'
+            },
+            textField:{
+                fontSize:'200%',
+                resize: 'none'
+            }                
+        };
+
         return (
-            <Paper style={{width:'100%', height:'84px', padding:'20px 20px 0px', position: 'fixed', bottom:'0'}}>
-                <TextField style={{fontSize:'30px'}}
+            <Paper style={styles.paper}>
+                <TextField style={styles.textField}
                 hintText="Talk anything!"
                 fullWidth={true}
                 />
