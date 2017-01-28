@@ -4,6 +4,7 @@ import mui from 'material-ui';
 
 var ThemeManager = new mui.Styles.ThemeManager();
 var Colors = mui.Styles.Colors;
+var AppBar = mui.AppBar;
 
 class App extends React.Component {
     constructor(){
