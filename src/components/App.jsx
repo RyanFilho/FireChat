@@ -1,5 +1,6 @@
 import React from 'react'; 
 import MessageList from './MessageList.jsx'; 
+import MessageInput from './MessageInput.jsx'; 
 import mui from 'material-ui';
 
 var ThemeManager = new mui.Styles.ThemeManager();
@@ -31,8 +32,9 @@ class App extends React.Component {
     render(){
         return (
             <div>
-                <AppBar title="FireChat" />
-                <MessageList />
+                <AppBar title="FireChat" style={{position: 'fixed'}} />
+                <MessageList/>
+                <MessageInput/>
             </div>
         );
     }

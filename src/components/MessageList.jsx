@@ -1,11 +1,35 @@
 import React from 'react';
 import Message from './Message.jsx';
+import mui from 'material-ui';
+
+var {Card, List} = mui;
 
 class MessageList extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             messages:[
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
+                'Hello, how are you?',
                 'Hello, how are you?',
                 'I am fine, and you?'
             ]
@@ -19,7 +43,13 @@ class MessageList extends React.Component {
         });
 
         return (
-            <div>{messageNodes}</div>
+            <Card>
+                <List style={{marginTop: '64px'}}>
+                    <div>
+                        {messageNodes}
+                    </div>
+                </List>
+            </Card>
         );
     }
 }
